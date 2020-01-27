@@ -1,3 +1,3 @@
 # sha256
 
-Ian McLoughlin
+by Ian McLoughlin
