@@ -1,6 +1,6 @@
 # Secure Hash Algorithm in C
-## [ian.mcloughlin@gmit.ie](mailto:ian.mcloughlin@gmit.ie)
-
+### [ian.mcloughlin@gmit.ie](mailto:ian.mcloughlin@gmit.ie)
+ 
 Reads from a file:
 
 ```bash
