@@ -1,4 +1,6 @@
 sha256
+refactor
+endian
 
 # Prerequisites
 *.d

@@ -29,7 +29,7 @@ const uint32_t K[] = {
 
 uint32_t Ch(uint32_t x, uint32_t y, uint32_t z) {
   // Section 4.1.2
-  return (x & y) ^ (~x & z);
+  return 
 }
 
 uint32_t Maj(uint32_t x, uint32_t y, uint32_t z) {
