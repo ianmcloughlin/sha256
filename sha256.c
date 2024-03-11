@@ -4,7 +4,19 @@
 
 #include <stdio.h>
 #include <inttypes.h>
-#include <endian.h>
+#if defined(__linux__)
+#  include <endian.h>
+#elif defined(__FreeBSD__) || defined(__NetBSD__)
+#  include <sys/endian.h>
+#elif defined(__OpenBSD__)
+#  include <sys/types.h>
+#  define be16toh(x) betoh16(x)
+#  define be32toh(x) betoh32(x)
+#  define be64toh(x) betoh64(x)
+#  define htobe16(x) htobe16(x)
+#  define htobe32(x) htobe32(x)
+#  define htobe64(x) htobe64(x)
+#endif
 
 // Section 2.1
 #define WORD uint32_t
